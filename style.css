@@ -1,0 +1,118 @@
+      *{
+        padding:0;
+        margin:0;
+      body {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: sans-serif;
+      }
+      #parent {
+        height: 400px;
+        width: 320px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        border: 2px solid rgba(255, 255, 255, 0.168);
+        border-radius: 20px;
+        background: transparent;
+        backdrop-filter: blur(10px);
+      }
+      .userdata {
+        margin: 15px 0px;
+        position: relative;
+      }
+      h2 {
+        color: rgb(255, 255, 255);
+        font-size: 45px;
+        text-transform: uppercase;
+      }
+
+      label {
+        text-transform: uppercase;
+        font-size: 25;
+        color: rgb(255, 255, 255);
+      }
+      input {
+        height: 40px;
+        width: 100%;
+        font-size: 17px;
+        color: white;
+        padding-left: 10px;
+        padding-right: 20px;
+
+        margin-top: 10;
+        background: transparent;
+        border: none;
+        border-bottom: 4px solid rgb(255, 255, 255);
+        outline: none;
+        position: relative;
+      }
+      input:hover {
+        border-color: aqua;
+        border-color: #708090;
+      }
+      input:focus {
+        border-color: aqua;
+        border-color: #708090;
+      }
+      input::placeholder {
+        text-transform: capitalize;
+        transition: 0.5s ease-out;
+
+        font-size: 18px;
+        color: rgb(255, 255, 255);
+        font-weight: 550;
+        position: absolute;
+      }
+      input:focus::placeholder {
+        opacity: 0;
+        font-size: 2px;
+        left: 50%;
+      }
+
+      .userdata i {
+        opacity: 1;
+      }
+      .userdata i {
+        position: absolute;
+        color: #ffffff;
+        font-size: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 1px;
+        opacity: 0;
+        transition: 1.5s;
+      }
+      input:focus ~ i,
+      input:not(:placeholder-shown) ~ i {
+        opacity: 1;
+      }
+      #btn {
+        height: 35px;
+        width: 140px;
+        font-size: 18px;
+        font-weight: 700;
+        border-radius: 20px;
+        margin-top: 20px;
+        border: none;
+        background: rgb(255, 255, 255);
+        color: black;
+        transition: 0.5s;
+        text-transform: uppercase;
+      }
+      #btn:hover {
+        background: #0dff008f;
+        color: #ffffff;
+      }
+      video {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+    
